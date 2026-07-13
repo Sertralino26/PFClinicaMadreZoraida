@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "plugins": [
+      "expo-asset",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Esta app usa tu ubicación para mostrarte la sede de la clínica más cercana."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#004AAD"
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Esta app usa tu ubicación para mostrarte la sede de la clínica más cercana.",
+        "NSMotionUsageDescription": "Esta app usa el acelerómetro para detectar tu movimiento mientras usas la app."
+      }
+    },
+    "android": {
+      "package": "com.zoraida.clinicamadre",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    }
+  }
+}
